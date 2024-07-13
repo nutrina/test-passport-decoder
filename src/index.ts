@@ -2,7 +2,7 @@
 import { Contract, ethers } from "ethers";
 import PassportDecoderABIs from "./abi/GitcoinPassportDecoder.json";
 
-const provider = new ethers.JsonRpcProvider("https://sepolia.shape.us/");
+const provider = new ethers.JsonRpcProvider(process.env.RPC_URL);
 const CHAIN_ID = "0x2b03";
 
 const decoderAddress = "0x2050256A91cbABD7C42465aA0d5325115C1dEB43";
