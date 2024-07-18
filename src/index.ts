@@ -21,6 +21,10 @@ async function main() {
   const recipients = [
     "0x70FEEEC90D37dc73D9deD8cfAfd7edE3F697b70B",
     "0x0F9acF892C809d27d9CD14059aADa68B343d0412",
+    "0x761ba9f637aE875222f5042A1dC2Ab2Bef77C9DB",
+    "0x41A29bb1740896C56E17bc2bd1ef9fFbA2b2e196",
+    "0xfB1c90F025Abd5996De2C3Da5323355c463742F5",
+    "0xf7d9EBc1977A5DD2079c24E6eBF968Bd05894957",
   ];
 
   for (var i = 0; i < recipients.length; i++) {
