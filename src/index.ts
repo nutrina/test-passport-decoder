@@ -3,9 +3,15 @@ import { Contract, ethers } from "ethers";
 import PassportDecoderABIs from "./abi/GitcoinPassportDecoder.json";
 
 const provider = new ethers.JsonRpcProvider(process.env.RPC_URL);
-const CHAIN_ID = "0x2b03";
 
-const decoderAddress = "0x2050256A91cbABD7C42465aA0d5325115C1dEB43";
+// Use this for shape sepolia
+// const CHAIN_ID = "0x2b03";
+// const decoderAddress = "0x2050256A91cbABD7C42465aA0d5325115C1dEB43";
+
+// Use this for shape mainnet
+const CHAIN_ID = "0x168";
+const decoderAddress = "0x2443D22Db6d25D141A1138D80724e3Eee54FD4C2";
+
 const passportDecoderABI = PassportDecoderABIs[CHAIN_ID];
 
 async function main() {
@@ -19,11 +25,11 @@ async function main() {
   console.log("providers: ", providers);
 
   const recipients = [
-    "0x70FEEEC90D37dc73D9deD8cfAfd7edE3F697b70B",
-    "0x0F9acF892C809d27d9CD14059aADa68B343d0412",
-    "0x761ba9f637aE875222f5042A1dC2Ab2Bef77C9DB",
-    "0x41A29bb1740896C56E17bc2bd1ef9fFbA2b2e196",
-    "0xfB1c90F025Abd5996De2C3Da5323355c463742F5",
+    // "0x70FEEEC90D37dc73D9deD8cfAfd7edE3F697b70B",
+    // "0x0F9acF892C809d27d9CD14059aADa68B343d0412",
+    // "0x761ba9f637aE875222f5042A1dC2Ab2Bef77C9DB",
+    // "0x41A29bb1740896C56E17bc2bd1ef9fFbA2b2e196",
+    // "0xfB1c90F025Abd5996De2C3Da5323355c463742F5",
     "0xf7d9EBc1977A5DD2079c24E6eBF968Bd05894957",
   ];
 
